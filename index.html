@@ -3,41 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dataset</title>
+    <title>Learning Physical Principles from Intuitive World Model</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
-        h1 {
-            color: #333;
+        header {
+            background: #f4f4f4;
+            padding: 20px;
+            text-align: center;
         }
-        .container {
+        nav {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        section {
+            padding: 20px;
             max-width: 800px;
             margin: auto;
         }
-        pre {
-            background: #f4f4f4;
-            padding: 10px;
-            border: 1px solid #ddd;
-            overflow-x: auto;
+        section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>My Dataset</h1>
-        <p>This dataset contains useful information. Here are some details:</p>
-        <h2>Sample Data</h2>
-        <pre>
-ID, Name, Value
-1, Alice, 100
-2, Bob, 200
-3, Charlie, 300
-        </pre>
+    <header>
+        <h1>Learning Physical Principles from Intuitive World Model</h1>
+        <p>Anonymous CVPR Submission</p>
+        <p>Paper ID: 2919 | CVPR 2025</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#dataset">Dataset</a></li>
+            <li><a href="#methods">Methods</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#download">Download</a></li>
+        </ul>
+    </nav>
+
+    <section id="abstract">
+        <h2>Abstract</h2>
+        <p>The physical world can be understood at multiple levels of abstraction, ranging from observable appearances and motions to underlying causal processes. This paper introduces the EXPHY dataset, designed to facilitate the understanding of physical principles and proposes the Intuitive World Model (IWM) for discovering intrinsic concepts and physical laws.</p>
+    </section>
+
+    <section id="dataset">
+        <h2>Dataset</h2>
+        <p>The EXPHY dataset includes various physical interactions: collisions, Coulomb forces, and combined events. It features fine-grained annotations, such as object velocities and inter-object forces, to rigorously evaluate models' understanding of physical principles.</p>
+        <img src="dataset-example.png" alt="Dataset Example" style="width:100%;max-width:600px;display:block;margin:auto;">
+    </section>
+
+    <section id="methods">
+        <h2>Methods</h2>
+        <p>The Intuitive World Model (IWM) consists of the Search Module and the Intuitive Interaction Module (IIM). These components enable the discovery of physical principles, such as Newton's and Coulomb's laws, through interpretable modeling.</p>
+    </section>
+
+    <section id="results">
+        <h2>Results</h2>
+        <p>The experimental results show IWM's ability to accurately simulate physical interactions, as well as its alignment with fundamental physical principles.</p>
+        <img src="results-chart.png" alt="Results Chart" style="width:100%;max-width:600px;display:block;margin:auto;">
+    </section>
+
+    <section id="download">
         <h2>Download</h2>
-        <a href="dataset.csv" download>Download the dataset</a>
-    </div>
+        <a href="paper.pdf" download>Download Paper (PDF)</a><br>
+        <a href="dataset.zip" download>Download Dataset</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Anonymous CVPR Submission. All rights reserved.</p>
+        <p>Contact: <a href="mailto:example@example.com">example@example.com</a></p>
+    </footer>
 </body>
 </html>
 
